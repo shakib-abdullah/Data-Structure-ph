@@ -1,6 +1,9 @@
+
 #include<bits/stdc++.h>
 
 using namespace std;
+
+
 
 class Node
 {
@@ -17,10 +20,15 @@ class Node
 };
 
 
-void insert_at_head(Node* &head ,int val){
+void insert_at_tail(Node* &head ,int val){
     Node* newnode = new Node(val);
-    newnode->next = head;
-    head = newnode;
+
+    Node* temp = head;
+    while( temp->next != NULL ){
+        temp = temp->next;
+    }
+    temp->next = newnode;
+
 
 }
 
@@ -46,7 +54,7 @@ int main(){
     cout << a->val << endl;       // value of a
     cout << b->val << endl;
 
-    insert_at_head(head , 5);       // value of b
+    insert_at_tail(head , 40);
 
     print_Linked_list(head);
 
