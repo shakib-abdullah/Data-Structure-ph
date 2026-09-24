@@ -19,7 +19,7 @@ class Node
 
 };
 
-
+// ekhane head re & diye call by referance er dorkr nai ,, head cng hoccena ekhan e sudhu value niye kaj hocce
 void insert_at_tail(Node* &head ,int val){
     Node* newnode = new Node(val);
 
@@ -49,10 +49,6 @@ int main(){
     head->next = a;
     a->next = b;
 //    b->next = NULL;
-
-    cout << head->val << endl;
-    cout << a->val << endl;       // value of a
-    cout << b->val << endl;
 
     insert_at_tail(head , 40);
 
