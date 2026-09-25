@@ -34,10 +34,11 @@ int main(){
 //    cout << a.next->next->val << endl;  // value of C
 
     Node* temp = &a;
-    while( temp != NULL){
+    while( temp != NULL){         // ekhane temp-> dile last node er value ta pabona
         cout << temp->val << endl;
         temp = temp->next;
     }
+
 
 
     return 0;
