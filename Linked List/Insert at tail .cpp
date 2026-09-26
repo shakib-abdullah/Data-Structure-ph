@@ -51,7 +51,7 @@ int main(){
 //    b->next = NULL;
 
     insert_at_tail(head , 40);
-
+    insert_at_tail(head , 50);
     print_Linked_list(head);
 
     return 0;
